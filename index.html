@@ -34,22 +34,22 @@ nav a:hover{color:#fff; border-bottom-color:#9fc3e8}
 /* Cards */
 .section-title{font-size:.85rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
   color:var(--muted); margin:2.8rem 0 1.2rem}
-.grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.2rem}
+.grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:.9rem}
 .card{background:var(--panel); border:1px solid var(--border); border-top:3px solid var(--navy);
-  border-radius:8px; box-shadow:var(--shadow); padding:1.5rem 1.5rem 1.3rem; display:flex; flex-direction:column;
+  border-radius:8px; box-shadow:var(--shadow); padding:1rem 1.1rem .9rem; display:flex; flex-direction:column;
   transition:transform .15s, box-shadow .15s}
 .card:hover{transform:translateY(-3px); box-shadow:0 6px 20px rgba(22,50,79,.14)}
-.card .icon{width:42px; height:42px; border-radius:8px; background:var(--blue-light); color:var(--navy);
-  display:flex; align-items:center; justify-content:center; margin-bottom:.9rem}
-.card .icon svg{width:22px; height:22px; stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
-.card h2{font-size:1.12rem; color:var(--navy)}
-.card p{font-size:.92rem; color:var(--muted); margin:.45rem 0 1rem; flex:1}
-.card .links a{display:block; font-size:.9rem; font-weight:600; margin-top:.3rem}
+.card .icon{width:32px; height:32px; border-radius:7px; background:var(--blue-light); color:var(--navy);
+  display:flex; align-items:center; justify-content:center; margin-bottom:.6rem}
+.card .icon svg{width:17px; height:17px; stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
+.card h2{font-size:1rem; color:var(--navy)}
+.card p{font-size:.84rem; color:var(--muted); margin:.3rem 0 .6rem; flex:1; line-height:1.45}
+.card .links a{display:block; font-size:.85rem; font-weight:600; margin-top:.2rem}
 .card .links a::after{content:" →"}
 .card .links .sub{font-weight:400; color:var(--text)}
 
 /* Footer */
-footer{margin-top:4rem; background:var(--navy-dark); color:#93a7ba; font-size:.85rem}
+footer{margin-top:2rem; background:var(--navy-dark); color:#93a7ba; font-size:.85rem}
 .footrow{display:flex; align-items:center; justify-content:space-between; padding:1.4rem 0; flex-wrap:wrap; gap:.6rem}
 footer a{color:#c3d3e2}
 footer a:hover{color:#fff}
@@ -88,8 +88,7 @@ footer a:hover{color:#fff}
 </header>
 
 <main class="container">
-  <div class="section-title">Explore</div>
-  <div class="grid">
+  <div class="grid" style="margin-top:1.3rem">
 
     <div class="card">
       <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 7h5l2-2h11v14H3z"/><path d="M3 11h18"/></svg></div>

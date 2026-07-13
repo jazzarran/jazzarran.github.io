@@ -19,8 +19,10 @@ a{color:var(--blue); text-decoration:none}
 header{background:var(--navy); color:#fff}
 .topbar{display:flex; align-items:center; justify-content:space-between; padding:1rem 0; flex-wrap:wrap; gap:.75rem}
 .logo{font-weight:700; font-size:1.05rem}
-.logo a{color:#fff; display:flex; align-items:center; padding:.2rem}
-.logo a:hover{color:#9fc3e8}
+.logo a{display:flex; align-items:center}
+.logo .mono{width:32px; height:32px; border-radius:50%; background:#2563a8; color:#fff;
+  display:inline-flex; align-items:center; justify-content:center; font-size:.82rem; font-weight:600; letter-spacing:.03em}
+.logo a:hover .mono{background:#3272bd}
 .logo span{color:#9fc3e8; font-weight:400}
 nav a{color:#d7e3f0; font-size:.92rem; margin-left:1.4rem; padding-bottom:.2rem; border-bottom:2px solid transparent}
 nav a:hover{color:#fff; border-bottom-color:#9fc3e8}
@@ -44,7 +46,7 @@ main{flex:1; padding-top:1rem}
 <header>
   <div class="container">
     <div class="topbar">
-      <div class="logo"><a href="index.html" aria-label="Home" title="Home"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></a></div>
+      <div class="logo"><a href="index.html" aria-label="Home" title="Home"><span class="mono">SS</span></a></div>
       <nav>
         <a href="projects.html" class="current">Projects</a>
         <a href="study-material.html">Study Material</a>
